@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>arashMarket</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        @font-face {
+            font-family: 'arash4';
+            src: url("fonts/font.woff2") format("woff");
+        }
+
+        * {
+            font-family: arash4;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row  p-4 g-4">
+        <div class="col-md-6">
+            <div class="card shadow p-3 bg-success bg-opacity-50 text-white vh-100 rounded-4">
+                <h2 class="text-center">اطلاعات تماس</h2>
+
+                <div class="m-1 flex-grow-1 d-flex flex-column justify-content-evenly">
+
+                    <p class="w-100 fs-5 d-flex justify-content-between">
+                        <span class="fw-bold">آدرس:</span>
+                        09123456789
+                    </p>
+
+                    <p class="w-100 fs-5 d-flex justify-content-between">
+                        <span class="fw-bold">شماره تماس:</span>
+                        09123456789
+                    </p>
+
+                    <p class="w-100 fs-5 d-flex justify-content-between">
+                        <span class="fw-bold">ایمیل:</span>
+                        example@gmail.com
+                    </p>
+
+                    <p class="w-100 fs-5 d-flex justify-content-between">
+                        <span class="fw-bold">ساعات کاری:</span>
+                        7 تا 23
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+            <div class="card shadow-lg p-3 bg-success bg-opacity-50 text-white vh-100 rounded-4">
+                <form action="index.html">
+                    <label class="form-label" for="name">نام ونام خانوادگی تان</label>
+                    <input class="form-control" id="name" type="text">
+                    <label class="form-label mt-3" for="tel">شماره موبایلتان</label>
+                    <input class="form-control" id="tel" type="tel" minlength="11" maxlength="11">
+                    <label class="form-label mt-3" for="toz">موضوعتان</label>
+                    <input class="form-control" id="toz" type="text">
+                    <label class="form-label mt-3" for="a">موضوعتان</label>
+                    <textarea name="a" id="a" class="form-control" rows="10"></textarea>
+                    <button class="btn btn-outline-primary mt-3 w-100 mb-3">ثبت نظر</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
