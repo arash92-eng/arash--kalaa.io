@@ -53,7 +53,7 @@
             <div class="position-relative">
 
                 <input
-                        class="form-control ps-5"
+                        class="form-control ps-5 rounded-4"
                         placeholder="جست و جوی محصولات..."
                         type="text">
 
@@ -66,25 +66,34 @@
 
         <div class="col-4 mt-3 mb-2 d-flex justify-content-end gap-3">
             <div>
-                <a href="index-login.html">
+                <a href="index-login.html" class="btn btn-outline-light rounded-3">
+                    ثبت نام / ورود
                     <img src="icons/profile.svg" alt="">
                 </a>
             </div>
+            <a href="" style="line-height: 35px">
             <img src="icons/heart.svg" alt="">
+            </a>
+            <a href="" style="line-height: 35px">
             <img src="icons/shopping-cart.svg" alt="">
-            <a href="">
+            </a>
+            <a href="" style="line-height: 35px">
                 <img src="icons/shopping-bag.svg" alt="">
             </a>
         </div>
 
     </div>
-    <div class="row d-inline text-white p-2 mt-2 pb-3">
-        <span>صفحه اصلی</span>
-        <span>محصولات گیمینک</span>
-        <span>موبایل</span>
-        <span>سیستم های آماده</span>
-        <span>درباره ما</span>
-        <span>ارتباط با ما</span>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-white p-2 mt-1 d-flex gap-3">
+                <span>صفحه اصلی</span>
+                <span>محصولات گیمینک</span>
+                <span>موبایل</span>
+                <span>سیستم های آماده</span>
+                <span>درباره ما</span>
+                <span>ارتباط با ما</span>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -357,13 +366,13 @@
             <img class="w-100 h-75 object-fit-cover rounded-4" src="aks/2f2ab6f37b7540deb5fc5f153c1dc801.jpg" alt="">
         </div>
     </div>
-    <div class="row mb-5 ">
+    <div class="row mb-5 g-3">
         <h3 class="text-danger text-center mb-3">
             نظرات
         </h3>
-        <div class="col-3">
-            <div class="card card-body">
-                <div class="mb-3">
+        <div class="col-12 col-sm-6 col-xl-3 ">
+            <div class="card" id="card">
+                <div class="card-body mb-3">
                     <span class="fs-5 ">علی رضایی</span>
                     <span>
                         <span><img src="icons/star.svg" alt=""></span>
@@ -378,9 +387,9 @@
             </div>
         </div>
 
-        <div class="col-3">
-            <div class="card card-body">
-                <div class="mb-3">
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card" id="card">
+                <div class="card-body mb-3">
                     <span class="fs-5 ">علی رضایی</span>
                     <span>
                         <span><img src="icons/star.svg" alt=""></span>
@@ -395,9 +404,9 @@
             </div>
         </div>
 
-        <div class="col-3">
-            <div class="card card-body">
-                <div class="mb-3">
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card" id="card">
+                <div class="card-body mb-3">
                     <span class="fs-5 ">علی رضایی</span>
                     <span>
                         <span><img src="icons/star.svg" alt=""></span>
@@ -412,9 +421,9 @@
             </div>
         </div>
 
-        <div class="col-3">
-            <div class="card card-body">
-                <div class="mb-3">
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="card" id="card">
+                <div class="card-body mb-3">
                     <span class="fs-5 ">علی رضایی</span>
                     <span>
                         <span><img src="icons/star.svg" alt=""></span>
@@ -429,9 +438,10 @@
             </div>
         </div>
     </div>
+    </div>
 
 
-</div>
+
 
 <div class="container-fluid border-top ">
     <div class="row  align-items-center justify-content-center text-center">
@@ -471,6 +481,13 @@
                     <h3>درباره ما</h3>
                     <p>آرش کالا یک سایت معتبر و در حال رشد است این سایت یکی از بهترین سایت های جهان است ویکی از خوبی های
                         این سایت متنوع بودن محصولاتش است و این سایت توسط آرش قاسمی ساخته شده و ...</p>
+                    <div class="position-relative my-3">
+                        <input id="e" type="text" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                        <button class="btn btn-primary position-absolute start-0 bottom-0">
+                            <img src="icons/arrow-left.svg" alt="">
+                        </button>
+                    </div>
+
                 </div>
                 <div class="col-3 me-2">
                     <h3>محصولات ما</h3>
@@ -502,12 +519,13 @@
                     <h3>
                         اطلاعات ما
                     </h3>
-                    <ul class="ms-5">
-                        <li style="list-style: none">جاجرم-پاساژ زیتون کنار افق کوروش</li>
-                        <li style="list-style: none">exmple@gmail.com</li>
-                        <li style="list-style: none">09123456789</li>
-                        <li style="list-style: none">05832278811</li>
+                    <ul class="ms-5 list-unstyled">
+                        <li>جاجرم-پاساژ زیتون کنار افق کوروش</li>
+                        <li>exmple@gmail.com</li>
+                        <li>09123456789</li>
+                        <li>05832278811</li>
                     </ul>
+
                 </div>
             </div>
 
