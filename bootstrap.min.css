@@ -13,15 +13,8 @@
      box-shadow: 0 0 17px black;
     z-index: 10;
 }
-.home-card .card-body:hover{
+#uncard div{
     transform: none;
     cursor: text;
-    box-shadow: 0 0 1px;
-     transition: 1s;
-}
-#card{
-    transform: none;
-    cursor: text;
-    box-shadow: 0 0 1px;
     transition: 1s;
 }
