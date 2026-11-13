@@ -1,3 +1,4 @@
+let inner = document.getElementById('z');
 let random = document.getElementById('random');
 let random2= Math.floor(Math.random()*10000).toString();
 random.innerText = random2;
@@ -61,18 +62,42 @@ function key5() {
     }
 }
 
+
 function sabtnam() {
     let users = [];
-
-    let name = document.getElementById("a").value;
-    let phone = document.getElementById("b").value;
-
-    let user = {
-        name: name,
-        phone: phone
-    };
-
-    users.push(user);
-    alert("ثبت نام انجام شد");
-    console.log(users);
+    let name = document.getElementById('a').value.trim();
+    let phone = document.getElementById('b').value.trim();
+    let pass = document.getElementById('c').value.trim();
+    let pass2 = document.getElementById('d').value.trim();
+    let code_secrity = document.getElementById('da').value.trim();
+    let dokme = document.getElementById('lll');
+    if (null === name || phone === null || pass === null || pass2 === null || code_secrity === null || pass !== pass2 || code_secrity !== random2){
+        inner.innerText = "ثبت نام انجام نشد";
+        inner.style.color = 'red';
+        dokme.style.background = "red";
+        dokme.style.borderColor = "red";
+        setTimeout(function () {
+            inner.innerText = "ثبت نام";
+            inner.style.color = "black";
+            dokme.style.background = "blue";
+            dokme.style.borderColor = "blue";
+        },2000)
+    } else {
+        let user = {
+            name: name,
+            phone: phone
+        };
+        users.push(user);
+        inner.innerText = "ثبت نام انجام شد";
+        inner.style.color = "green";
+        dokme.style.background = "green";
+        dokme.style.borderColor = "green";
+        setTimeout(function () {
+            inner.innerText = "ثبت نام";
+            inner.style.color = "black";
+            dokme.style.background = "blue";
+            dokme.style.borderColor = "blue";
+        },2000);
+        console.log(users);
+    }
 }
