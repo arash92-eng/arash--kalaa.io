@@ -7,7 +7,7 @@
     transition: 0.8s;
 }
 .home-card .card:hover{
-    transform: scale(1.08) rotate(6deg);
+    transform: scale(1.08) rotate(2deg);
     cursor: pointer;
     opacity: 0.8;
      box-shadow: 0 0 17px black;
