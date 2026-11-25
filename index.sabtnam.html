@@ -6,35 +6,43 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 rounded-3 text-center align-items-center justify-content-center" id="loading" style="display: flex;backdrop-filter: blur(3px) ;background: rgba(255,255,255,0.8);right: 0;left: 0;bottom: 0;top: 0;position: fixed ;width: 100vw;height: 100vh;margin: auto;z-index: 4;text-align: center">
+            <h3>loading...</h3>
+            <img src="loading.gif" alt="">
+        </div>
+    </div>
+</div>
 <div id="li" class="container">
     <div class="row mt-5">
         <div class="col-12">
                 <div style="width: 43%" class="card d-block m-auto shadow-sm p-3">
-                    <h3 class="card-title text-center">ثبت نام</h3>
+                    <h3 id="z" class="card-title text-center">ثبت نام</h3>
                     <div>
 
                         <label class="form-label" for="a"></label>
                         <input placeholder="نام ونام خانوادگی" class="form-control mb-2 p-1" id="a" type="text">
                         <label id="inner" class="form-label" for="b"></label>
-                        <input onkeyup="key2()" placeholder="شماره تلفن" class="form-control mb-2 p-1" id="b"
+                        <input onblur="key2()" placeholder="شماره تلفن" class="form-control mb-2 p-1" id="b"
                                type="text">
                         <div class="d-flex gap-2">
                             <div class="w-50">
                                 <label id="innerr" class="form-label" for="c"></label>
-                                <input onkeyup="key3()" placeholder="رمز عبور(حداقل 8 جرف)"
+                                <input onblur="key3()" placeholder="رمز عبور(حداقل 8 جرف)"
                                        class="form-control mb-2 p-1" id="c" type="password">
                             </div>
 
                             <div class="w-50">
                                 <label id="innerrr" class="form-label" for="d"></label>
-                                <input onkeyup="key4()" placeholder="تکرار رمز عبور" class="form-control mb-2 p-1"
+                                <input onblur="key4()" placeholder="تکرار رمز عبور" class="form-control mb-2 p-1"
                                        id="d" type="password">
                             </div>
                         </div>
                         <div class="d-flex">
                             <div class="w-75">
                                 <label id="qqq" class="form-label" for="da"></label>
-                                <input onkeyup="key5()" placeholder="رمز امنیتی" class="form-control mb-2 p-1" id="da"
+                                <input onblur="key5()" placeholder="رمز امنیتی" class="form-control mb-2 p-1" id="da"
                                        type="text">
                             </div>
                             <div id="random" class="w-25 m-4 p-1 text-center border border-dark">
@@ -59,6 +67,7 @@
         </div>
     </div>
 </div>
-<script src="js.js"></script>
+<script src="js-sabtnam.js"></script>
+<script src="load.js"></script>
 </body>
 </html>
